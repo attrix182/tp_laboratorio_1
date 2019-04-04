@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1553872073 source:c:\users\alumno\desktop\calculadoratp\calculadoratp\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1554405015 source:e:\usuarios\escritorio\calcu-master\calculadoratp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones_calculadora.h"
+	"menu.h"
+
+1554405115 e:\usuarios\escritorio\calcu-master\calculadoratp\funciones_calculadora.h
+
+1554402264 e:\usuarios\escritorio\calcu-master\calculadoratp\menu.h
+
+1554402264 source:e:\usuarios\escritorio\calcu-master\calculadoratp\funciones_calculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones_calculadora.h"
+
+1554391015 source:e:\usuarios\escritorio\calcu-master\calculadoratp\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
