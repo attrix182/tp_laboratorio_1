@@ -84,8 +84,26 @@ int main()
                 }
 
                 printf("\n La multiplicacion de %.2f * %.2f = %.2f \n ", a, b, multiplicacion);
-                printf("\n El factorial de %2.f es %.2f \n ", a, factorialA);
-                printf("\n El factorial de %2.f es %.2f \n \n ", b, factorialB);
+
+                if(a < 0)
+                {
+                    printf("\n El factorial de %2.f es : %s \n ", a, "No existe el factorial de un numero negativo");
+                }
+                else
+                {
+                    printf("\n El factorial de %2.f es : %.2f \n ", a, factorialA);
+
+
+                }
+
+                if(b < 0)
+                {
+                    printf("\n El factorial de %2.f es : %s \n ", b, "No existe el factorial de un numero negativo");
+                }
+                else
+                {
+                    printf("\n El factorial de %2.f es : %.2f \n ", b, factorialB);
+                }
 
                 break;
             }
@@ -106,7 +124,8 @@ int main()
         system("pause");
         system("cls");
 
-    } while(seguir == 's');
+    }
+    while(seguir == 's');
 
     return 0;
 }
