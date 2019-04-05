@@ -23,3 +23,23 @@
 	<stdlib.h>
 	"menu.h"
 
+1554474995 source:c:\users\alumno\desktop\tp_laboratorio_1-master\calculadoratp\funciones_calculadora.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones_calculadora.h"
+
+1554474995 c:\users\alumno\desktop\tp_laboratorio_1-master\calculadoratp\funciones_calculadora.h
+
+1554474995 source:c:\users\alumno\desktop\tp_laboratorio_1-master\calculadoratp\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1554474995 c:\users\alumno\desktop\tp_laboratorio_1-master\calculadoratp\menu.h
+
+1554475428 source:c:\users\alumno\desktop\tp_laboratorio_1-master\calculadoratp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones_calculadora.h"
+	"menu.h"
+

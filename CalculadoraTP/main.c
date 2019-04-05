@@ -87,7 +87,7 @@ int main()
 
                 if(a < 0)
                 {
-                    printf("\n El factorial de %2.f es : %s \n ", a, "No existe el factorial de un numero negativo");
+                    printf("\n El factorial de %2.f es : %s \n ", a, " No existe el factorial de un numero negativo \n");
                 }
                 else
                 {
@@ -98,7 +98,7 @@ int main()
 
                 if(b < 0)
                 {
-                    printf("\n El factorial de %2.f es : %s \n ", b, "No existe el factorial de un numero negativo");
+                    printf("\n El factorial de %2.f es : %s \n ", b, " No existe el factorial de un numero negativo \n");
                 }
                 else
                 {
