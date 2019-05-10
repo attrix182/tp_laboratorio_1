@@ -36,7 +36,7 @@ int main()
     do
     {
         opcion = pedirOpcionMenu();
-
+        flagCreate = searchFull(list, TAM);
         switch(opcion)
         {
         case 1:
@@ -46,7 +46,7 @@ int main()
             salary = getFloat("Ingrese salario\n");
             sector = getInt("Ingrese sector\n");
             addFull = addEmployee(list, TAM, id, name, lastName, salary, sector);
-            flagCreate = 1;
+
 
             if(addFull == -1)
             {
@@ -54,8 +54,9 @@ int main()
             }
             break;
         case 2:
-            if(flagCreate == 1)
+            if(flagCreate >= 1)
             {
+                printEmployees(list,TAM);
                 id = getInt("Ingrese ID de empleado a modificar \n");
                 idCheck = findEmployeeById(list, TAM, id);
                 while(idCheck == -1)
@@ -64,6 +65,8 @@ int main()
                     idCheck = findEmployeeById(list, TAM, id);
 
                 }
+                system("cls");
+                printEmployee(list, TAM, idCheck);
                 optionModify = getOptionModify();
                 modifyEmployee(list, TAM, id, name, lastName, salary, sector, optionModify);
             }
@@ -73,8 +76,9 @@ int main()
             }
             break;
         case 3:
-            if(flagCreate == 1)
+            if(flagCreate >= 1)
             {
+                printEmployees(list,TAM);
                 id = getInt("Ingrese ID de empleado a remover \n");
                 idCheck = findEmployeeById(list, TAM, id);
                 while(idCheck == -1)
@@ -93,7 +97,7 @@ int main()
             break;
 
         case 4:
-            if(flagCreate == 1)
+            if(flagCreate >= 1)
             {
                 optionShow = getOptionShow();
                 switch(optionShow)

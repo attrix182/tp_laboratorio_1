@@ -41,6 +41,16 @@ int addEmployee(sEmployee list[], int len, int id, char name[],char lastName[],f
  * \return int Return (0) if Ok
  *
  */
+int printEmployee(sEmployee list[], int length, int id);
+
+/** \brief print one sEmployee by id
+ *
+ * \param list sEmployee*
+  * \param length int
+ * \param id int
+ * \return int Return (0) if Ok
+ *
+ */
 int printEmployees(sEmployee list[], int length);
 
 /** \brief find an sEmployee by Id en returns the index position in array.

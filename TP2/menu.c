@@ -13,7 +13,7 @@ int pedirOpcionMenu()
 int getOptionModify()
 {
     int optionModify;
-    printf("             MODIFICACION                \n");
+    printf("                            \n");
     printf(" 1.NOMBRE\n 2.APELLIDO\n 3.SALARIO\n 4.SECTOR\n");
     optionModify = getInt("\nIngrese una opcion\n");
     return optionModify;

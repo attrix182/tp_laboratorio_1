@@ -58,6 +58,20 @@ int printEmployees(sEmployee list[], int len)
     return 0;
 }
 
+int printEmployee(sEmployee list[], int len, int id)
+{
+
+    printf("%10s - %10s - %10s - %10s - %10s \n", "ID", "NOMBRE", "APELLIDO","SALARIO"," SECTOR");
+
+        if(list[id].isEmpty == 0)
+        {
+            printf("%10d  %10s  %10s  %10.2f  %10d \n", list[id].id, list[id].name, list[id].lastName, list[id].salary, list[id].sector);
+
+        }
+
+    return 0;
+}
+
 int findEmployeeById(sEmployee list[], int len,int id)
 {
     int i;
@@ -218,6 +232,7 @@ int searchFull(sEmployee list[], int len)
     }
     return numberOfEmployees;
 }
+
 int searchSalarySup(sEmployee list[], int len)
 {
     int i;
