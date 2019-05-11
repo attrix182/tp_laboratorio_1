@@ -29,10 +29,9 @@ int main()
     sEmployee list[TAM];
     initEmployees(list, TAM);
 
-/*
-     hardcode(list, TAM);  //Usar estas 2 lineas solo si desea hardcodear datos
-     flagCreate = 1;
-*/
+
+   //  hardcode(list, TAM);  //Usar esta linea solo si desea hardcodear datos
+
     do
     {
         opcion = pedirOpcionMenu();

@@ -26,7 +26,7 @@ int initEmployees(sEmployee list[], int len);
  * \param list sEmployee*
  * \param len int
  * \param id int
- * \param name[] char
+ * \param name[ 5000] char
  * \param lastName[] char
  * \param salary float
  * \param sector int
