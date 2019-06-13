@@ -242,16 +242,16 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
     switch(option)
     {
     case 1:
-        ll_sort(pArrayListEmployee, employee_sortById, 0);
+        ll_sort(pArrayListEmployee, employee_sortById, 1);
         break;
     case 2:
-        ll_sort(pArrayListEmployee, employee_SortByName, 0);
+        ll_sort(pArrayListEmployee, employee_SortByName, 1);
         break;
     case 3:
-        ll_sort(pArrayListEmployee, employee_SortByhoursWorked, 0);
+        ll_sort(pArrayListEmployee, employee_SortByhoursWorked, 1);
         break;
     case 4:
-        ll_sort(pArrayListEmployee, employee_SortBySalary, 0);
+        ll_sort(pArrayListEmployee, employee_SortBySalary, 1);
         break;
     }
 
