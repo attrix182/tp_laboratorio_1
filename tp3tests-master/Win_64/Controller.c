@@ -57,6 +57,8 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
     Employee* newEmployees = employee_new();
     int ret = 0;
     char idAux[50],nameAux[50],hoursWorkedAux[50],salaryAux[50];
+    int hoursWorkedAuxINT;
+    int salaryAuxINT;
     int lenList = ll_len(pArrayListEmployee);
     int auxIntID;
     int i;
@@ -81,8 +83,11 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
         {
 
             getString("ingrese nombre \n", nameAux);
-            getString("ingrese horas trabajadas \n", hoursWorkedAux);
-            getString("ingrese salario \n", salaryAux);
+            hoursWorkedAuxINT = getInt("ingrese horas trabajadas \n");
+            salaryAuxINT = getInt("ingrese salario \n");
+
+            itoa(hoursWorkedAuxINT, hoursWorkedAux, 10);
+            itoa(salaryAuxINT, salaryAux, 10);
 
             newEmployees = employee_newParameters(idAux, nameAux, hoursWorkedAux, salaryAux);
             ll_add(pArrayListEmployee, newEmployees);
