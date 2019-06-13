@@ -73,7 +73,7 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
             newEmployees = (Employee*)ll_get(pArrayListEmployee, i);
             if( newEmployees->id == auxIntID)
             {
-                printf("El id que desea agregar ya existe!\n");
+                printf("Ese ID ya esta en uso!\n");
                 break;
 
             }
@@ -113,7 +113,7 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
 
     if(pArrayListEmployee != NULL)
     {
-        idAuxInt = getInt("Ingrese el id que desea modificar:  ");
+        idAuxInt = getInt("Ingrese el ID que desea modificar:  ");
         system("cls");
         for( i = 0; i <listLen ; i++ )
         {
